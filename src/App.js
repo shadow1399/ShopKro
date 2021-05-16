@@ -108,7 +108,7 @@ function App() {
         <Route exact path="/Grocery/Snacks" ><Snacks onWish={onWish} onUnwish={onUnwish} wishList={wishList} /></Route>
         <Route exact path="/Grocery/Snacks/:id" ><SnacksDes onAdd={onAdd} cartItem={cartItems} /></Route>
         <Route exact path="/Cart"><Cart cartItem={cartItems} onAdd={onAdd} onRemove={onRemove} /></Route>
-        {/* <Route exact path="/WishList"><WishList wishList={wishList} onUnwish={onUnwish}/></Route> */}
+        <Route exact path="/WishList"><WishList wishList={wishList} onUnwish={onUnwish} /></Route>
 
       </Switch>
     </BrowserRouter>
